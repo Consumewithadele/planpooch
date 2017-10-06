@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-18T13:15:38Z" product-name="social_auth">
+		<header/>
+		<body>
+			<trans-unit id="logout.label">
+				<source>Logout</source>
+			</trans-unit>
+			<trans-unit id="facebook.label">
+                <source>Sign in with Facebook</source>
+            </trans-unit>
+            <trans-unit id="google.label">
+                <source>Sign in with Google</source>
+            </trans-unit>
+            <trans-unit id="twitter.label">
+                <source>Sign in with Twitter</source>
+            </trans-unit>
+            <trans-unit id="linkedin.label">
+                <source>Sign in with LinkedIn</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

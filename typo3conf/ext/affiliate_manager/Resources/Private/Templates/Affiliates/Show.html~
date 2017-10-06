@@ -1,0 +1,49 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<!--<h1>Single View for Affiliates</h1>-->
+
+<f:flashMessages />
+<!--<f:render partial="Affiliates/Properties" arguments="{affiliates:affiliates}" />-->
+
+
+
+<div class="tx-aff-full-details">
+	<div class="row">
+		<div class="col-lg-6 col-sm-12">
+				<img style="" src="{affiliates.imageurl}"  alt="" title=""/>
+		</div>
+
+		<div class="col-lg-6 col-sm-12">
+			<div class="tx-aff-details-subsection">
+				<h2>{affiliates.name}</h2>
+				<p class="tx-aff-price">${affiliates.cost} {affiliates.currency}</p>
+				<!--<a href="{affiliates.url}">Buy</a></div>-->
+				<div class="txbtn"><f:link.external uri="{affiliates.url}">Buy</f:link.external></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-sm-12">
+			<h2> Product Description </h2>	
+			<p class=""><f:format.html>{affiliates.description}</f:format.html></p>
+		</div>			
+	</div>
+</div>
+
+<!--<f:link.action action="list">Back to list</f:link.action><br />
+<f:link.action action="new">New Affiliates</f:link.action>-->
+</f:section>

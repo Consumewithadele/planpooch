@@ -1,0 +1,100 @@
+
+<div class="ui container">
+
+
+
+<div class="products">
+
+<f:if condition="{data.category.title}">
+<f:then>
+<div class="product-header">{data.category.title}</div>
+</f:then>
+<f:else>
+<div class="product-header">All Categories</div>
+</f:else>
+</f:if>
+	<div class="ui equal width stackable grid">
+				
+
+<f:widget.paginate objects="{data.results}" as="paginatedAffiliates" configuration="{itemsPerPage: 8, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+
+<f:for each="{paginatedAffiliates}" as="affiliate" iteration="iterator">
+
+
+<!--<div class="col-sm-12 col-lg-6 col-3">
+
+	<div class="image-container">
+		<f:link.action action="show" arguments="{affiliates : affiliate}"> <img style="" src="{affiliate.imageurl}"  alt="" title=""/></f:link.action>
+	</div>
+
+	<div class="tx-aff-caption">
+		<div class="tx-aff-title"><h2>{affiliate.name}</h2></div>
+		<div class="tx-aff-desc"><f:format.crop maxCharacters="160" respectHtml="FALSE"><f:format.html>{affiliate.description}</f:format.html></f:format.crop></div>
+		<p class="tx-aff-price">{affiliate.cost} {affiliate.currency}</p>
+		<div class="txbtn"><f:link.action action="show" arguments="{affiliates : affiliate}">Buy Now</f:link.action></div>
+	</div>
+
+</div>-->
+
+
+
+
+<div class="middle aligned column">
+			<div class="ui card">
+				<div class="content">
+				<img src="fileadmin/plannedpooch/version2/images/heard-icon.png" class="ui heart image" width="20">
+				</div>
+				
+				<div class="image breed-header">
+				
+				<!--<f:link.action action="show" arguments="{affiliates : affiliate}"> -->
+				
+				<img style="" src="{affiliate.imageurl}"  alt="" title="" class="ui centered breed image" width="174"/>
+				
+				
+				<!--</f:link.action>-->
+				
+				
+				<!--<img src="fileadmin/plannedpooch/version2/images/breed-one.png" class="ui centered breed image" width="174">-->
+				</div>
+				
+				<div class="content">
+					<div class="description">
+					<p style="font-size:inherit; text-align:center;"><f:format.crop maxCharacters="30" respectHtml="FALSE">{affiliate.name}:</f:format.crop></p><f:format.crop maxCharacters="60" respectHtml="FALSE">{affiliate.description}</f:format.crop>
+					</div>
+				</div>
+				
+				<div class="extra content">
+					<a>{affiliate.currency} {affiliate.cost}</a>
+					<span class="right floated">
+                  <img src="fileadmin/plannedpooch/version2/images/bag.png" class="ui image" width="20">
+                </span>
+				</div>
+			</div>
+</div>
+
+<f:if condition="{iterator.cycle} % 4">
+            <f:then>
+            </f:then>
+            <f:else>
+                <f:if condition="{iterator.isLast}">
+                    <f:then>
+                    </f:then>
+                    <f:else>
+                      <!--  // close row -->
+                        </div>
+                        <!-- // open new row -->
+                        <div class="ui equal width stackable grid">
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
+
+
+</f:for>
+
+</f:widget.paginate>
+
+		
+</div> <!-- end the row -->
+	</div></div>

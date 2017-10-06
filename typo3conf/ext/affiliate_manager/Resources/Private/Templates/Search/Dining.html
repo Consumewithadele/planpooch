@@ -1,0 +1,61 @@
+
+ 
+<style>
+
+
+.ui.planpooch-button.button {
+    background-image: linear-gradient(-68deg, #DA233D 2%, #812531 99%) !important;
+    box-shadow: 0 4px 0 0 #8B2533 !important;
+    border-radius: 100px !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    padding: 10px !important;
+    padding: 18px 48px !important;
+    max-width: 275px !important;
+
+}
+
+</style> 
+ 
+      <div class="ui container">
+        <div class="products">
+          <div class="product-header">Dining</div>
+          <div class="location">
+            <div class="iu image">
+              <img src="fileadmin/plannedpooch/version2/images/results-image.png" width="100" class="ui centered results-image image" />
+            </div>
+           <h3>Your postal code</h3>
+            <p>Based on this information we’ll find the best dining places for your pet</p>
+            <div class="ui text container">
+            
+            
+            
+            <!--
+              <form class="ui form">
+                <div class="field">
+                  <input type="text" placeholder="enter here">
+                </div>
+                <a href="#" class="ui planpooch-button button" type="submit">SEARCH</a>
+              </form>
+              -->
+              
+              
+                 
+				<f:form name="searchFields" action="searchDining" class="ui form">
+
+
+                <div class="field"><f:form.textfield property="postalCode" name="postalCode" placeholder="enter here"/></div>
+					<f:form.submit class="ui planpooch-button button" value="SEARCH"/>
+
+
+				</f:form>
+
+            </div>
+          </div>
+        </div>
+      </div> <!-- products -->
+
+    
+    

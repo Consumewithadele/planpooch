@@ -1,0 +1,57 @@
+<T3DataStructure>
+<meta>
+    <langDisable>1</langDisable>
+</meta>
+<sheets>
+    <sDEF>
+        <ROOT>
+            <TCEforms>
+                <sheetTitle>Settings</sheetTitle>
+            </TCEforms>
+            <type>array</type>
+            <el>
+                <!-- View -->
+                <switchableControllerActions>
+                    <TCEforms>
+                    <label>Select Options</label>
+                    <onChange>reload</onChange>
+                    <config>
+                        <type>select</type>
+                        <items>
+                            <numIndex index="0">
+                                <numIndex index="0">Select Category to Display</numIndex>                            
+                            </numIndex> 
+                            <numIndex index="1">
+                                <numIndex index="0">C</numIndex>
+                                <numIndex index="1">ControllerName->action1;ControllerName->action2</numIndex> <!-- Allow action to FE -->
+                            </numIndex>
+                            <numIndex index="2">
+                                <numIndex index="0">Action 2</numIndex>
+                                <numIndex index="1">ControllerName->action3;ControllerName->action4</numIndex> <!-- Allow action to FE -->
+                            </numIndex>
+                        </items>
+                    </config>
+                    </TCEforms>
+                </switchableControllerActions>
+
+                <settings.formID>
+                    <TCEforms>
+                        <label>Available Forms</label>
+                        <displayCond>FIELD:switchableControllerActions:=:ControllerName->action1;ControllerName->action2</displayCond>
+                        <config>
+                            <type>select</type>
+                            <size>1</size>
+                            <minitems>0</minitems>
+                            <maxitems>1</maxitems>
+                            <itemsProcFunc>TYPO3\VendorName\Controller\ControllerName->flexFormsListItems</itemsProcFunc>
+                            <items type="array"></items>
+                        </config>
+                    </TCEforms>
+                </settings.formID>
+				
+				
+            </el>
+        </ROOT>
+    </sDEF>
+</sheets>
+</T3DataStructure>

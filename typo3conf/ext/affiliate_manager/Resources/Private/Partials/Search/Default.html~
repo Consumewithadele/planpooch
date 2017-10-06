@@ -1,0 +1,111 @@
+
+<style>
+.ui.grid > .row[class*="equal width"] > .column, .ui.grid[class*="equal width"] > .column:not(.row), .ui.grid[class*="equal width"] > .row > .column {
+max-width: 33%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.default-image .heart{
+	top: 45px;
+	left: 10px;
+	z-index: 1;
+	
+
+}
+</style>     
+     
+     
+      <div class="ui container">
+        <div class="products">
+          <div class="product-header">{data.partial}</div>
+          <div class="dining-top">
+            <div class="iu image">
+              <img src="fileadmin/plannedpooch/version2/images/results-image.png" width="100" class="ui centered image" />
+            </div>
+           <h1>Results for {data.postalcode}</h1>
+          </div>
+          
+          <div class="ui equal width stackable grid">
+            <div class="column">
+              <div class="dining-under">
+                <div class="ui  container">
+                
+                
+                
+<f:widget.paginate objects="{data.results}" as="paginatedResults" configuration="{itemsPerPage: 6, insertAbove: 0, insertBelow: 1}">
+
+<f:for each="{paginatedResults}" as="affiliate" iteration="iterator">
+                
+
+                  <div class="dining-card">
+                    <div class="lead">
+                      <div class="ui image default-image">
+                         <!--<img src="fileadmin/plannedpooch/version2/images/white-border-heart.png" width="25" class="ui white-border-image image" />-->
+                         <f:render partial="General/Heart" arguments="{_all}"/>	
+                         
+                        <img src="{affiliate.imageurl}" width="350" class="ui image" />
+                      </div>
+                    </div>
+                    <div class="main">
+                      <h2>{affiliate.name}</h2>
+                      <div class="ui stackable grid">
+                        <div class="two wide right aligned column">
+                          <img src="fileadmin/plannedpooch/version2/images/pointer.png" width="17" class="ui image" />
+                        </div>
+                        <div class="twelve wide left aligned column">
+                           <p>  
+                            {affiliate.address} {affiliate.postalcode}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nether">
+                    
+                      <p><f:format.html>{affiliate.description} Visit {affiliate.url} </f:format.html></p>
+                      
+                    </div>
+                  </div>
+      
+                  
+                  
+<f:if condition="{iterator.cycle} % 2">
+            <f:then>
+            </f:then>
+            <f:else>
+                <f:if condition="{iterator.isLast}">
+                    <f:then>
+                    </f:then>
+                    <f:else>
+                      <!--  // close row -->
+                        </div></div></div>
+                        <!-- // open new row -->
+         <div class="column">
+              <div class="dining-under">
+                <div class="ui  container">
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
+
+
+</f:for>
+
+
+ </div></div></div> <!-- Ends column, dining-under, ui container --> 
+ 
+ 
+</f:widget.paginate>
+                  
+
+</div>
+</div>
+</div> 
+
+
+
+
+
+
+ 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-02-13T00:23:32Z" product-name="affiliate_manager">
+		<header/>
+		<body>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates">
+				<source>Affiliates</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.name">
+				<source>Product Title</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.sourceid">
+				<source>Product ID</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.description">
+				<source>Product Description</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.imageurl">
+				<source>Image or Logo URL</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.url">
+				<source>Affiliate Link</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.category">
+				<source>Item Subcategory</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.active">
+				<source>Active</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.petnumber">
+				<source>Maximum Number of Pets</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.cost">
+				<source>Pricing</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.address">
+				<source>Business Address</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.businesshours">
+				<source>Business Hours</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.phonenumber">
+				<source>Business Contact Phone Number</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.rating">
+				<source>Planned Pooch Rating</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.currency">
+				<source>Currency</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.affiliatechannel">
+				<source>Affiliate Channel</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.sync">
+				<source>Disable Sync</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.prevcost">
+				<source>Previous Cost</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.retailer">
+				<source>Business Name / Retailer</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.inscost">
+				<source>Insurance Cost (Per Cycle)</source>
+			</trans-unit>
+			
+			
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.inscycle">
+				<source>Insurance Cycle</source>
+			</trans-unit>
+			
+			
+			
+		</body>
+	</file>
+</xliff>

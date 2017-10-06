@@ -1,0 +1,58 @@
+.tx_affiliatemanager_content {
+	font-size:16px;
+	
+}
+.tx_affiliatemanager_content . .tx_main_manner h1 {
+	text-align:center;
+}
+
+.tx_affiliatemanager_content .tx_notes_area {
+	margin-top:50px;
+	
+}
+
+.tx_affiliatemanager_content .tx_notes_area p {
+	font-size:0.7em;
+	line-height:1px;
+	
+}
+
+
+.tx_affiliate_sync {
+	display:block;
+	width:100%;
+	min-height:150px;
+	float:left;
+	
+}
+
+.tx_affiliate_sync_button {
+	font-size:0.8em;
+    display: inline-block;
+    width: 22%;
+    height: 35px;
+    background: #004e61;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+.tx_affiliate_sync_button:hover {
+	background-color: #00bdd8;
+}
+
+
+@media screen and (max-width: 991px) {
+    .tx_affiliate_sync_button {
+      	width:45%;
+      	text-align:center;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-bottom: 15px;
+    }
+}

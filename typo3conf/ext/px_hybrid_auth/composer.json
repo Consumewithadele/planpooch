@@ -1,0 +1,42 @@
+{
+    "name": "portrino/px_hybrid_auth",
+    "description": "Adds social sign-in via HybridAuth to TYPO3-Login and -Logout. (by portrino GmbH)",
+    "version": "3.0.0",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3",
+        "CMS",
+        "HybridAuth",
+        "SocialAuth",
+        "typo3",
+        "portrino"
+    ],
+    "homepage": "http://typo3.org",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Andre Wuttig",
+            "email": "wuttig@portrino.de",
+            "homepage": "http://www.portrino.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "dev@portrino.de",
+        "issues": "https://forge.typo3.org/projects/extension-px_hybrid_auth/issues",
+        "source": "https://github.com/portrino/px_hybrid_auth"
+    },
+    "require": {
+        "typo3/cms-core": ">=7.6.2,<8.0",
+        "hybridauth/hybridauth": "~2.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Portrino\\PxHybridAuth\\": "Classes"
+        },
+        "classmap": ["Resources/Public/Php/hybridauth/additional-providers/hybridauth-xing/Providers"]
+    },
+    "replace": {
+        "px_hybrid_auth": "*"
+    }
+}

@@ -1,0 +1,57 @@
+
+plugin.tx_affiliatemanager_affiliatesfe {
+	view {
+		templateRootPaths.0 = {$plugin.tx_affiliatemanager_affiliatesfe.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_affiliatemanager_affiliatesfe.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_affiliatemanager_affiliatesfe.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_affiliatemanager_affiliatesfe.persistence.storagePid}
+	}
+}
+
+plugin.tx_affiliatemanager._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-affiliate-manager table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-affiliate-manager table th {
+		font-weight:bold;
+	}
+
+	.tx-affiliate-manager table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+ # Module configuration
+module.tx_affiliatemanager_web_affiliatemanageraffiliatesbe {
+	persistence {
+		storagePid = {$module.tx_affiliatemanager_affiliatesbe.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_affiliatemanager_affiliatesbe.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_affiliatemanager_affiliatesbe.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_affiliatemanager_affiliatesbe.view.layoutRootPath}
+	}
+}

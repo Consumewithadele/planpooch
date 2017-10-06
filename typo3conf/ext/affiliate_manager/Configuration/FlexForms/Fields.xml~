@@ -1,0 +1,39 @@
+<T3DataStructure>
+	<ROOT>
+	<TCEforms>
+		<sheetTitle>LLL:EXT:lms3offlineattendance/Resources/Private/Language/locallang.xlf:settings</sheetTitle>
+	</TCEforms>
+	<type>array</type>
+		<el>
+			<settings.overrideAllGroups>
+						<TCEforms>
+							<label>Display notifications for all Courses (ignore "Invitation Course" below)</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+			</settings.overrideAllGroups>
+			
+			
+			<settings.courseUid>
+				<TCEforms>
+					<label>LLL:EXT:lms3offlineattendance/Resources/Private/Language/locallang.xlf:course</label>
+					<config>
+						<type>select</type>
+						<foreign_table>tx_lms3courses_domain_model_course</foreign_table>
+						<foreign_table_where>AND tx_lms3courses_domain_model_course.deleted = 0 AND tx_lms3courses_domain_model_course.hidden = 0</foreign_table_where>
+						<maxitems>1</maxitems>
+						<minitems>1</minitems>
+					</config>
+				</TCEforms>
+			</settings.courseUid>
+			
+
+
+		</el>
+		
+
+	</ROOT>
+	
+
+</T3DataStructure>

@@ -1,0 +1,61 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace femanager=In2code\Femanager\ViewHelpers}
+
+<f:layout name="Nowrap" />
+<f:section name="main">
+
+
+<!-- Reference -->
+<!-- https://stackoverflow.com/questions/10737033/how-to-pass-ajax-arguments-to-the-extbase-action -->
+
+<script type="text/javascript">
+    var actionsPathFromViewHelperSetInTheView 
+        = '<f:uri.action action="addfav" controller="Widgets" pageType="89657201" />';
+        
+        //"{f:uri.action(action: 'test')}";
+        //alert(actionsPathFromViewHelperSetInTheView);
+</script>
+<script type="text/javascript" src="typo3conf/ext/affiliate_manager/Resources/Public/Js/Ajax.js"></script>
+
+
+
+<style>
+.af-avatar {
+    background-color: #fff;
+    border: 2px solid #fff;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 60px;
+    margin-top: -30px;
+    position: relative;
+    width: 60px;
+    -moz-box-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+#saved_item_count {
+font-size: 12px;
+font-weight: 100;
+color: white;
+line-height: 21px;
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-right:5px;
+}
+
+</style>
+
+
+<f:flashMessages />
+
+
+
+<f:if condition="{data.logged_in} == 1">
+<a href='<f:uri.action action="favview"/>' class="saved-item"><span id="saved_item_count" style="color:white;font-size:inherit;">{data.favCount}</span>Saved Items<span><i class="heart icon"></i></span></a> 
+</f:if>
+
+
+
+</f:section>

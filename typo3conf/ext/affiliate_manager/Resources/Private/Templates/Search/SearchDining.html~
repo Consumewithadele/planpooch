@@ -1,0 +1,1 @@
+<f:render partial="tags" arguments="{_all}" />

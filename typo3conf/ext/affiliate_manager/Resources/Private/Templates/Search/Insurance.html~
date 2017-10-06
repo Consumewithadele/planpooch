@@ -1,0 +1,333 @@
+ 
+  
+<style>
+
+
+.ui.planpooch-button.button {
+    background-image: linear-gradient(-68deg, #DA233D 2%, #812531 99%) !important;
+    box-shadow: 0 4px 0 0 #8B2533 !important;
+    border-radius: 100px !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    padding: 10px !important;
+    padding: 18px 48px !important;
+    max-width: 275px !important;
+
+}
+
+</style> 
+ 
+ 
+ 
+ <div class="ui container">
+        <div class="products">
+          <div class="product-header">Insurances</div>
+          
+          <div class="insurance-box">
+            <div class="ui container" id="first-content-box">  <!-- display this one first -->
+              <div class="ui centered stackable grid">
+                <div class=" six wide middle aligned column">
+                  <div class="ui image">
+                    <img src="fileadmin/plannedpooch/version2/images/one.png" width="40" class="ui image" />
+                  </div>
+                  <p class="choice">Your pets details</p>
+                </div> <!-- column -->
+                <div class="thwo wide middle aligned column">
+                  <img src="fileadmin/plannedpooch/version2/images/angle-right.png" width="27" class="ui centered offer-angle image" />
+                </div>
+                <div class="six wide middle aligned column">
+                  <div class="ui image">
+                    <img src="fileadmin/plannedpooch/version2/images/gray-two.png" width="40" class="ui image" />
+                  </div>
+                  <p class="choice">Insurance options</p>
+                </div> <!-- column -->
+              </div> <!-- grid -->
+              <img src="fileadmin/plannedpooch/version2/images/white-dog-logo.png" width="60" class="ui centered white-dog-logo image" />
+              
+              <h3>Tell us a bit about your pet</h3>
+              
+              <p class="fill">Fill in some details about your pet so we can give you the best offers</p>
+              
+             <div class="ui text container">
+             
+             
+             <f:form name="insurance" action="searchInsurance" class="ui form" object="{insurance}" id="search-form">
+               <!--<form class="ui form">-->
+               
+               
+               
+                  <div class="ui stackable grid">
+                    <div class="five wide right-aligned column">
+                      <div class="part">
+                      Pet name
+                      </div>
+                    </div>
+                    <div class="eleven wide column">
+                      <div class="input">
+                      
+                      
+                         <!--<input type="name" placeholder="enter here" class="first-input">-->
+                         
+                         <f:form.textfield property="petname" name="petname" placeholder="enter here" class="first-input" type="name"/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="field check-box">
+                    <div class="ui stackable grid">
+                        <div class="five wide right-aligned column">
+                         <div class="part">
+                            Is your pet male or female?
+                          </div>
+                        </div>
+                        <div class="eleven wide column">
+                          <div class="field check-box">
+                            <div class="ui radio checkbox">
+                              <!--<input type="radio" name="gender" tabindex="0" class="hidden">-->
+                              <f:form.radio property="gender" value="male" tabindex="0" class="hidden" />
+                              <label>Male</label>
+                            </div>
+                          <div class="ui radio second-checkbox checkbox">
+                            <!--<input type="radio" name="gender" tabindex="0" class="hidden">-->
+                            <f:form.radio property="gender" value="female" tabindex="0" class="hidden" />
+                            <label>Female</label>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- grid -->
+                  </div> <!-- check-box -->
+
+                  <div class="ui stackable grid">
+                    <div class="five wide right-aligned column">
+                      <div class="part">How old is your pet?  </div>
+                    </div>
+                    <div class="eleven wide column">
+                      <div class="input">
+                      	<f:form.textfield property="petyears" name="petyears" placeholder="years" class="first-input" type="years"/>
+								<f:form.textfield property="petmonths" name="petmonths" placeholder="months" class="first-input" type="months"/>
+                      </div>
+                    </div>
+                  </div>
+                 
+                 <div class="ui stackable size-grid grid">
+                   <div class="five wide right-aligned column">
+                     <div class="part">What size is It?  </div>
+                   </div>
+                   <div class="eleven wide column">
+                     <div class="ui equal width stackable grid">
+                       <div class="column">
+                         <div class="ui size image">
+                          <img src="fileadmin/plannedpooch/version2/images/small.png" width="85" class="ui image" />
+                           
+									<f:form.radio property="petsize" value="small" tabindex="0" class="hidden" />                           
+                           <p>
+                             Small
+                             <span class="size-span">(Up To 10kg)</span>
+                           </p>
+                         </div> <!-- image -->
+                       </div>
+                       <div class="column">
+                         <div class="ui size image">
+                          <img src="fileadmin/plannedpooch/version2/images/medium.png" width="85" class="ui image" />
+									<f:form.radio property="petsize" value="medium" tabindex="0" class="hidden" />                             
+                           <p>
+                             Medium
+                             <span class="size-span">(Up To 10kg)</span>
+                           </p>
+                         </div> <!-- image -->
+                       </div>
+                       <div class="column">
+                         <div class="ui size image">
+                          <img src="fileadmin/plannedpooch/version2/images/large.png" width="85" class="ui image" />
+                           
+<f:form.radio property="petsize" value="large" tabindex="0" class="hidden" />                                                        
+<p>
+                             Large
+                             <span class="size-span">(Up To 10kg)</span>
+                           </p>
+                         </div> <!-- image -->
+                       </div>
+                       <div class="column"></div>
+                       <div class="column"></div>
+                     </div> <!-- grid -->
+                   </div>
+                 </div> <!-- grid -->
+                 
+                  <div class="ui stackable grid">
+                    <div class="five wide right-aligned column">
+                     <div class="part">
+                       Is It a crossbreed?  
+                      </div>
+                    </div>
+                    <div class="eleven wide column">
+                      <div class="field check-box">
+                        <div class="ui radio checkbox">
+                          <f:form.radio property="crossbreed" value="1" tabindex="0" class="hidden" />  
+                          <label>Yes</label>
+                        </div>
+                      <div class="ui radio second-checkbox checkbox">
+                        <f:form.radio property="crossbreed" value="0" tabindex="0" class="hidden" />  
+                        <label>No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- grid -->
+                 
+                    <div class="ui stackable grid">
+                      <div class="five wide right-aligned column">
+                       <div class="part">
+                         Has It been chipped?  
+                        </div>
+                      </div>
+                      <div class="eleven wide column">
+                        <div class="field check-box">
+                          <div class="ui radio checkbox">
+                            <f:form.radio property="chipped" value="1" tabindex="0" class="hidden" />  
+                            <label>Yes</label>
+                          </div>
+                        <div class="ui radio second-checkbox checkbox">
+                          <f:form.radio property="chipped" value="0" tabindex="0" class="hidden" />  
+                          <label>No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- grid -->
+                 
+                  <div class="ui stackable grid">
+                    <div class="five wide right-aligned column">
+                      <div class="part">
+                      How much did you pay or donate for It?
+                      </div>
+                    </div>
+                    <div class="eleven wide column">
+                      <div class="input">
+                        <div class="ui left icon input">
+                         <i class="pound left floated icon"></i>
+                        <f:form.textfield property="cost"  type="name"/>
+                       </div>
+                      </div>
+
+                    </div>
+                  </div>
+                 
+                 <div class="ui stackable grid">
+                   <div class="five wide column"></div>
+                   <div class="eleven wide column">
+                     <div class="input">
+                      <div class="ui  checkbox">
+                        <f:form.checkbox property="free" value="1"/> 
+                        <label>I didn‘t pay anything</label>
+                      </div>
+                     </div>
+
+                   </div>
+                 </div>
+
+                    <div class="ui stackable grid">
+                      <div class="five wide right-aligned column">
+                       <div class="part">
+                        Has It been neutered or spayed?
+                        </div>
+                      </div>
+                      <div class="eleven wide column">
+                        <div class="field check-box">
+                          <div class="ui radio checkbox">
+                            <f:form.radio property="neutered" value="1" tabindex="0" class="hidden" />  
+                            <label>Yes</label>
+                          </div>
+                        <div class="ui radio second-checkbox checkbox">
+                          <f:form.radio property="neutered" value="0" tabindex="0" class="hidden" />  
+                          <label>No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- grid -->
+               <!-- </form>--> <!-- form -->
+               
+               
+               <f:form.submit id="submit-action" class="ui planpooch-button button" value="Done, Let's see the offers"/>
+               <!--<div class="ui planpooch-button button">
+                 Done, Let's see the offers
+               </div>-->
+                </f:form>
+
+
+
+            </div> <!-- container -->
+</div> <!-- first content box end-->
+
+
+        <div class="ui container" id="second-content-box" style="display:none;">
+          <div class="ui centered stackable grid">
+            <div class=" six wide middle aligned column">
+              <div class="ui image">
+                <img src="fileadmin/plannedpooch/version2/images/one.png" width="40" class="ui image" />
+              </div>
+              <p class="choice">Your pets details</p>
+            </div> <!-- column -->
+            <div class="thwo wide middle aligned column">
+              <img src="fileadmin/plannedpooch/version2/images/angle-right.png" width="27" class="ui centered offer-angle image" />
+            </div>
+            <div class="six wide middle aligned column">
+              <div class="ui image">
+                <img src="fileadmin/plannedpooch/version2/images/gray-two.png" width="40" class="ui image" />
+              </div>
+              <p class="choice">Insurance options</p>
+            </div> <!-- column -->
+          </div> <!-- grid -->
+          <div class="search-wrapper">
+            <img src="fileadmin/plannedpooch/version2/images/search-loader.png" width="100" class="ui centered image" />
+          </div>
+          <h3>Searching for your prices</h3>
+          
+          <p class="fill">We’ll have it ready for you in a moment</p>
+        </div> <!-- container -->
+
+</div>
+</div>
+</div>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          
+          
+<script type="text/javascript"> 
+jQuery( document ).ready(function($) {
+
+
+    var $input = $('#refresh');
+
+
+
+    		$("#first-content-box").show();
+			$("#second-content-box").hide();
+
+	$("#search-form").submit(function (e) {
+    		e.preventDefault();
+    		var form = this;
+
+    		$("#first-content-box").hide();
+    		$("#second-content-box").fadeIn("slow");
+    		setTimeout(function () {
+        		form.submit();
+    		}, 6000); // in milliseconds
+		});
+    		
+    		
+	});
+	
+window.onpageshow = function(event) {
+if (event.persisted) {
+    window.location.reload() 
+}
+};
+	
+</script>
+
+          
+          
+          
+          
+          

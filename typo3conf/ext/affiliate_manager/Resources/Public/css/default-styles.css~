@@ -1,0 +1,98 @@
+
+/* General Styling for all pages */
+.tx-affiliate-manager {
+	width:100%;
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	overflow:hidden;
+}
+.tx-affiliate-manager > div { margin-bottom:15px; }
+/*.tx-affiliate-manager h2 {text-align:center;}*/
+
+/* Product Listings (grid layout)*/
+
+.image-container { width:100%; height:294px;background-color:white; display:block; text-align:center; float:left; /*border: solid 1px black;*/}
+.tx-aff-price { text-align:center; color: #cd3333; }
+.tx-aff-caption { background-color:white; float:left; width:100%; min-height:180px; }
+.tx-aff-caption h2 { text-align:center; margin-top:0px; padding-top:5px; }
+.image-container img {max-width:100%; max-height:100%; margin-top:25px; margin-bottom:25px; display: block;margin-left: auto; margin-right: auto;}
+.image-container > a { display: block; width: 100%; height: 100%; }
+
+.tx-aff-title {
+	min-height: 55px;
+	display: block;
+}
+
+.tx-aff-desc { 
+	text-align: center;
+	min-height: 50px;
+	line-height: 15px;
+	margin-top: 5px;
+}
+
+
+
+
+/* Pagination Styling */
+
+.f3-widget-paginator  {
+	display:block;
+	list-style-type: none;
+	width:100%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	float:left;
+}
+
+.f3-widget-paginator li { display: inline-block; width: 20px;	}
+.f3-widget-paginator .previous, .f3-widget-paginator .next {	width: 70px;}
+.f3-widget-paginator li a{padding:3px;color: #cd3333;}
+
+/* Product Details Styling */
+
+.tx-aff-full-details .row { background-color:white; margin-bottom:75px;}
+.tx-aff-full-details img {margin-left: auto; margin-right: auto; display: block; max-width:100%; max-height:500px; margin-top:35px; margin-bottom:35px;}
+.tx-aff-details-subsection {margin-top:50px;}
+.tx-aff-details-subsection h2 {text-align:center;}
+
+
+
+.txbtn {
+    background: #cd3333;
+    background-image: -webkit-linear-gradient(top, #cd3333, #cd3333);
+    background-image: -moz-linear-gradient(top, #cd3333, #cd3333);
+    background-image: -ms-linear-gradient(top, #cd3333, #cd3333);
+    background-image: -o-linear-gradient(top, #cd3333, #cd3333);
+    background-image: linear-gradient(to bottom, #cd3333, #cd3333);
+}
+
+.txbtn, .txbtn a {
+	width:125px;
+   padding-top: 3px;
+   padding-bottom: 2px;
+   margin-top: 5px;
+   margin-bottom: 5px;	
+   -webkit-border-radius: 10;
+   -moz-border-radius: 10;
+   text-align: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+	border-radius: 10px;
+}
+
+.txbtn:hover, .txbtn a:hover {
+	text-decoration:none;
+	background-image: linear-gradient(to bottom, #a91414, #a91414);
+	color: #ffffff;
+}
+
+.txbtn, .txbtn a {
+	text-decoration:none;
+	color: #ffffff;
+}
+

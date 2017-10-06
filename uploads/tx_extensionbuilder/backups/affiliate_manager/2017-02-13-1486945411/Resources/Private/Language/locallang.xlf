@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-02-12T23:56:50Z" product-name="affiliate_manager">
+		<header/>
+		<body>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates">
+				<source>Affiliates</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.sourceid">
+				<source>Sourceid</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_affiliatemanager_domain_model_affiliates.active">
+				<source>Active</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

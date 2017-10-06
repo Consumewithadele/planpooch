@@ -1,0 +1,9 @@
+HTMLArea.classesLabels = {"align-left":"","align-center":"","align-right":"","csc-frame-frame1":"","csc-frame-frame2":"","important":"","name-of-person":"","detail":"","component-items":"","action-items":"","component-items-ordered":"","action-items-ordered":"","align-justify":"","lyt-left":"Bild Links","hr-grau":"HR Grau","hr-blau":"HR Grau","hr-schwarz":"HR Grau"};
+HTMLArea.classesValues = {"align-left":"text-align: left;","align-center":"text-align: center;","align-right":"text-align: right;","csc-frame-frame1":"background-color: #EDEBF1; border: 1px solid #333333;","csc-frame-frame2":"background-color: #F5FFAA; border: 1px solid #333333;","important":"color: #8A0020;","name-of-person":"color: #10007B;","detail":"color: #186900;","component-items":"color: #186900;","action-items":"color: #8A0020;","component-items-ordered":"color: #186900;","action-items-ordered":"color: #8A0020;","align-justify":"","lyt-left":"color: #8A0020;","hr-grau":"color: #CCCCCC;","hr-blau":"color: #0000FF;","hr-schwarz":"color: #000000;"};
+HTMLArea.classesNoShow = {};
+HTMLArea.classesAlternating = {};
+HTMLArea.classesCounting = {};
+HTMLArea.classesSelectable = {};
+HTMLArea.classesRequires = {};
+HTMLArea.classesRequiredBy = {};
+HTMLArea.classesXOR = {};

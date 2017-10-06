@@ -1,0 +1,33 @@
+
+<f:layout name="Default" />
+
+
+
+<f:section name="content">
+<h1></h1>
+
+<f:flashMessages />
+
+
+<div class="tx_main_manner"><h1>Add New Category</h1></div>
+<div class="tx_instructions_area">
+<p>Add a new category. The storage ID is the ID of the sysfolder for the given category.</p>
+</div>
+
+
+
+<f:form action="addnewcategories"  name="newCategories" object="{newCategories}">
+
+<label>Category Title: </label>
+<f:form.textfield property="title" />
+
+
+<label>Category Storage ID: </label>
+<f:form.textfield property="categorystoragepid" />
+
+<BR><BR>
+<f:form.submit value="Add" class="tx_affiliate_sync_button" />
+</f:form>
+
+
+</f:section>

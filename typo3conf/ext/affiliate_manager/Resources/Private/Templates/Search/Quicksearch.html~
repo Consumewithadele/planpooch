@@ -1,0 +1,74 @@
+
+<style>
+
+.afx-quicksearch div, .afx-quicksearch form, .afx-quicksearch input, .afx-quicksearch select, .afx-quicksearch option .afx-quicksearch  {
+	font-size:15px !important;
+	line-height:0 !important;
+
+}
+
+.afx-quicksearch .fields, .afx-quicksearch .field {
+	margin-bottom:0 !important;
+	margin-top:0 !important;
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	
+}
+
+.afx-quicksearch .ui.selection.dropdown {
+padding-left: 3.2em !important;
+padding-top: 1.3em !important;
+}
+
+</style>
+
+
+
+<div class="search-field afx-quicksearch">
+    <div class="ui right labeled listing-input input">
+                    <!--<div class="ui left-basic basic label">
+                      Search in: 
+                      <strong>All categories</strong>
+                      </div>-->
+
+<f:form action="processquicksearch" name="Category" method="post" class="ui form" style="font-size:15px;line-height:0;">
+
+
+	<div class="two fields " >
+
+
+		
+		<div class="field" >
+
+		
+		
+			<select class="ui dropdown" name="tx_affiliatemanager_pi1[category]">
+			<option value="0" style="font-size:15px;line-height:0;">All categories</option>
+			<f:for each="{categories}" as="category">
+			  <option value="{category.categorystoragepid}" >{category.title}</option>
+			</f:for>
+			</select>
+		       
+		</div>
+		      
+		<div class="field" >       
+			<!--<input placeholder="what are you searching for??" type="text">
+			<div class="ui basic circle label"><i class="search icon"></i></div>
+			-->
+			
+<div class="ui icon input">
+  <input name="tx_affiliatemanager_pi1[text]" placeholder="Search..." type="text" style="width:auto;font-size:15px;">
+  <i class="search icon" style="left:initial;"></i>
+</div>
+			
+		</div>
+		
+	</div>               
+</f:form>
+                  
+   </div> <!-- input -->
+                
+             <!--<a href="#" class="saved-item">8 Saved Items
+                 <span><i class="heart icon"></i></span>
+             </a>--> 
+</div>

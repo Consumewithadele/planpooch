@@ -1,0 +1,92 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Default" />
+<f:section name="main">
+
+ 
+<f:flashMessages />
+
+<div class="ui container" style="padding-top:30px">
+<div class="vouchers">
+	<div class="ui equal width stackable grid">
+
+
+<f:widget.paginate objects="{discounts}" as="paginatedAffiliates" configuration="{itemsPerPage: 9, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+	<f:for each="{paginatedAffiliates}" as="affiliate" iteration="iterator">
+
+<f:if condition="{affiliate.title} == 'Placeholder'">
+
+<f:then>
+
+<div class="column"></div>
+
+
+</f:then>
+
+
+
+<f:else>
+<div class="column">
+        <div class="vouchers-card">
+		
+		<f:if condition="{iterator.cycle} % 2"><f:then><div class="vouchers-card-top orange"></f:then><f:else><div class="vouchers-card-top cyan"></f:else></f:if>
+          <!--<div class="vouchers-card-top orange">-->
+            <h2>OFFER</h2>
+          </div>
+          <div class="major-part">
+            <div class="ui stackable grid">
+              <div class="five wide column">
+			  
+			  <f:image image="{affiliate.image}" class="ui image" width="90" />
+                <!--<img src="fileadmin/plannedpooch/version2/images/pet-home.png" width="90" class="ui image" />-->
+              </div>
+              <div class="eleven wide left aligned column">
+                <h3>{affiliate.title}</h3>
+              </div>
+            </div>
+            <f:format.html>{affiliate.description}</f:format.html>
+            <a href="{affiliate.link1Href}" class="ui planpooch-button button" style="display:block;">
+              {affiliate.link1Text}
+            </a>
+            <div class="ui stackable grid">
+              <!--<div class="eight wide column">
+                <p>View <a href="#" class="red">Pets at Home</a></p>
+              </div>-->
+              <div class="eight wide column"></div>
+            </div>
+			</div>
+		</div>
+	</div>
+</f:else>
+</f:if>
+
+<f:if condition="{iterator.cycle} % 3">
+            <f:then>
+            </f:then>
+            <f:else>
+                <f:if condition="{iterator.isLast}">
+                    <f:then>
+                    </f:then>
+                    <f:else>
+                      <!--  // close row -->
+                        </div>
+                        <!-- // open new row -->
+                        <div class="ui equal width stackable grid">
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
+
+
+</f:for>
+
+</f:widget.paginate>
+
+		
+</div> <!-- end the row -->
+	</div>
+	</div>
+
+
+
+</f:section>

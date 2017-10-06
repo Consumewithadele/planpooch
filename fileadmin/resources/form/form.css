@@ -1,0 +1,28 @@
+
+/* ----- CUSTOM FORM STYLING AS OF 20160201 --------------  */
+
+div.csc-mailform li label { width:194px !important; margin-right:0 !important; } 
+
+
+#ValueBox{ display:block; margin:0 0 0 195px; }
+#CaptchaImg { display:block; margin:10px 0 10px 195px; position:static; border: 1px solid #cccccc; }
+.csc-mailform ol { list-style:none !important }
+.csc-mailform ol li { list-style:none !important; margin:0 0 2px 0 !important; }
+
+
+/* RESPONSIVE FORM OVERRIDES -- DO NOT TOUCH ANYTHIN BELOW */
+
+@media
+screen and  (min-width: 220px) and (max-width: 980px),
+screen and  (min-device-width: 480px) and (max-device-width: 980px),
+only screen and (max-device-width: 480px) and (orientation:portrait),
+only screen and (-webkit-min-device-pixel-ratio : 1.5),   
+only screen and (min-device-pixel-ratio : 1.5)
+{   
+
+#ValueBox{ margin:0px; }
+#CaptchaImg {margin:10px 0 10px 0; }
+.csc-mailform input[type="submit"]  { margin: 20px 0 0 0;  }
+} /* form media css ends */
+
+

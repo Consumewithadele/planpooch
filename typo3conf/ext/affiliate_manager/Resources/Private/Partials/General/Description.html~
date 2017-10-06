@@ -1,0 +1,13 @@
+<div class="description">
+
+
+	<p style="font-size:inherit; text-align:center;">
+		<f:format.crop maxCharacters="30" respectHtml="FALSE">{affiliate.name}:</f:format.crop>
+	</p>
+	
+	
+	<f:format.crop maxCharacters="60" respectHtml="FALSE">
+		{affiliate.description}
+	</f:format.crop>
+	
+</div>

@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+
+/* HTML and BODY*/
+html, body { width:100%; height:100%; font-family: 'Nunito Sans', sans-serif; color: #5e5e5e; font-size:16px; background-color: rgb(248,247,245);}
+body { padding-top: 50px; }
+
+/* BASIC FONT STYLING */
+h1 { font-family: 'Nunito Sans Black', sans-serif; font-size:1.3em; font-weight:700; }
+h2 { font-family: 'Nunito Sans Black', sans-serif; font-size:1.2em; font-weight:700; }
+h3, h4, h5, h6 { font-size: 1.1em; font-weight:inherit; }
+span.red { color: #cd3333; }
+
+/* FUNCTIONAL CSS */
+.clear { clear: both; }
+
+
+/* HOME PAGE CSS */
+.main-content-area {
+  background-image: url('images/dog-background.png');
+  width: 100%;
+  min-height: 600px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.banner-text { position:relative; left:10%; top:80px; font-family: 'Nunito Sans Black', sans-serif; font-size:18px; max-width: 35%;}
+.company-brands { background-color:white; text-align:center; margin-top:45px; overflow:auto;}
+.company-brands > h2 { margin-top: 35px; }
+
+.logo-img-wrapper {
+  width:100%;
+  height:auto;
+  display:block;
+  float:left;
+  margin-bottom:15px;
+  position:relative;
+}
+
+.logo-img-wrapper h1{
+  display: block;
+  float: left;
+  position:relative;
+  bottom:0;
+}
+
+#logo-img {
+  width:150px;
+  height:auto;
+  float:left;
+}
+
+
+
+/* BOOTSTRAP & TYPO3 - GRIDELEMENTS EXT */
+.col-lg-4 .csc-default .csc-textpic-center .csc-textpic-text {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.login-bottom-banner { padding-bottom: 85px; text-align:center; }
+.login-bottom-banner span { text-align:center; }
+.login-bottom-banner .red { color: rgb(205,51,51); }
+
+.login-bottom-banner img {
+  width:40%;
+  height:auto;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#page-11 .tx-felogin-pi1 form label {
+  display:none;
+}
+#page-11 .tx-felogin-pi1 form input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#page-11 .tx-felogin-pi1 input[type=submit]{
+  padding:5px 15px; 
+  background: #cd3333;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  color:white;
+}
+
+form input[type=submit]:hover {
+  background: #a91414 !important;
+}
+
+#femanager_field_submit:hover {
+  background: #a91414;
+}
+
+#page-11 .tx-felogin-pi1 fieldset div {
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#page-13 .tx-femanager form label {
+  
+}
+#page-13 .tx-femanager form input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#page-13 .tx-femanager input[type=submit]{
+  padding: 9px 18px;
+  background: #cd3333;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  width: 175px;
+}
+
+#page-13 .tx-femanager .alert-error {
+  display:none;
+}
+
+#page-13 .tx-femanager .controls {
+  display:inline-block;
+}
+
+#page-13 .tx-femanager form label {
+  width: 150px;
+  text-align: left;
+}
+
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#page-13 .tx-femanager legend {
+  border:0px;
+  text-align:center;
+  font-family: 'Nunito Sans Black', sans-serif;
+  font-size:1.2em;
+  font-weight: 700;
+  margin-top:20px;
+  margin-bottom:10px;
+  line-height:1.1;
+  color: inherit;
+  display:block;
+}
+
+
+/*dashboard css*/
+.dashboard-wrapper {
+  width: 100%;
+  border-top-style: solid;
+  border-size: 5px;
+  border-color: rgb(197,11,37);
+  display: inline-block;
+  float: left;
+  overflow: visible;
+  min-height:900px;
+  height: auto !important;
+}
+
+.login-page-logo {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.login-page-logo img{
+  width:300px;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  display:block;
+  text-align:center;
+}
+
+.img-center {
+  display:block;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.logo-container { height:auto; }
+
+#logo img {
+  margin-left:11.5%;
+}
+
+a#logo{
+  display: block;
+}
+
+.logo-container img {
+  display:block;
+  width: 150px;
+  height:auto;
+  padding-top:50px;
+}
+
+.right-slider {
+  padding-top:75px;
+  background-color: rgb(248,247,245);
+}
+
+/*
+.carousel-control {
+background-image:none !important;
+}
+
+.carousel-inner > .item > img{
+width:100%;
+height:auto;
+}
+*/
+.navbar-nav {
+  float:right;
+  padding-right: 75px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: black;
+}
+
+a.active, li.active {
+  color:red !important;
+}
+
+.csc-default {
+  display:block;
+  float:left;
+  width:100%;
+}
+
+.t3content1, .t3content2 {
+  width: 100%;
+  display: block;
+  float: left;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.t3content1 {padding-top:75px;}
+
+.login-area {
+  float:left;
+  display:block;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#menu {
+  font-family: 'Nunito Sans Black', sans-serif;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:0.9em;
+  
+}
+
+#menu .container {
+  width:95%;
+}
+
+.navbar-brand {
+  line-height:inherit;
+  font-size:inherit !important;
+}
+
+.sub-menu {
+  display:inline-block;
+  width:100%;
+  margin-left:10px;
+  margin-right:10px;
+  padding-top:30px;
+  
+}
+
+.sub-menu ul {
+  width:100%;
+  text-decoration:none;
+}
+
+.sub-menu li {
+  width:100%;
+  text-decoration: none;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.sub-menu a {
+  text-transform:uppercase;
+  text-decoration: none;
+  color:black;
+  
+}
+.sub-menu img {
+  width: 50px;
+  margin-right:10%;
+  height:auto;
+}
+
+.social-icons {
+  border-top-style:solid;
+  border-color: rgb(197,11,37);
+  margin-top: 225px;
+}
+
+.social-icons img{
+  display:block;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
+
+/* login css */
+
+.tx-felogin-pi1 > h3, .tx-felogin-pi1 > div, .tx-felogin-pi1 fieldset > legend {
+  display:none;
+}
+.tx-felogin-pi1 { text-align:center; }
+
+
+.tx-femanager {
+  text-align:center;
+}
+
+#page-11 .login-bottom-banner {
+  display:none;
+}
+
+/* end login css */
+
+
+/**TYPO3 CSS**/
+
+
+.align-center { text-align:center;}
+.align-right { text-align:right; }
+.align-left { text-align:left; }
+
+.btn, #menu-item-11, #menu-item-13 {
+  background: #cd3333;
+  background-image: -webkit-linear-gradient(top, #cd3333, #cd3333);
+  background-image: -moz-linear-gradient(top, #cd3333, #cd3333);
+  background-image: -ms-linear-gradient(top, #cd3333, #cd3333);
+  background-image: -o-linear-gradient(top, #cd3333, #cd3333);
+  background-image: linear-gradient(to bottom, #cd3333, #cd3333);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 110px;
+  text-align: center;
+}
+
+.btn a, #menu-item-11 a, #menu-item-13 a{
+  color: #ffffff !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn:hover, #menu-item-11:hover, #menu-item-13:hover {
+  background: #a91414;
+  background-image: -webkit-linear-gradient(top, #a91414, #a91414);
+  background-image: -moz-linear-gradient(top, #a91414, #a91414);
+  background-image: -ms-linear-gradient(top, #a91414, #a91414);
+  background-image: -o-linear-gradient(top, #a91414, #a91414);
+  background-image: linear-gradient(to bottom, #a91414, #a91414);
+  text-decoration: none;
+}
+
+p {padding-top:5px; padding-bottom:5px; margin-left:5px; margin-right:5px;}
+.ce-center img {display:block; text-align:center; margin-left:auto; margin-right:auto;     height: auto;}
+
+/*banner headers / subheaders*/
+
+
+dl, ol, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.csc-default {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.csc-textpic-center .csc-textpic-text {
+  min-height: 200px;
+}
+
+img {
+  max-width:100%;
+}
+
+.csc-textpic-text h1, .csc-textpic-text h2 {
+  margin-top:0px;
+}
+
+.csc-textpic-image {
+  max-width:100%;
+}
+
+div.csc-textpic-center .csc-textpic-center-inner {
+  max-width:100%;
+}
+
+div.csc-textpic-center .csc-textpic-center-outer {
+  max-width:100%;
+}
+
+.site-footer {
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+}
+
+div.csc-textpic .csc-textpic-imagewrap img { margin:15px; }
+
+/* mbr-cards-col is equivelant to typo3 .striped .subcolumns > div */
+
+#features1-2 .striped .subcolumns > div:nth-child(2n+1) {
+  background-color: #efefef;
+}
+
+.striped .subcollumns > div {
+  display: table-cell;
+  float: none;
+}
+
+.striped .tx-jfmulticontent-pi1 {
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.striped .csc-default {
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+
+/*form styling*/
+form ol, form ul {
+  list-style-type: none;
+}
+
+.content-left {
+  background-color:white;
+  display: block;
+  height: 100%;
+  float: left;
+  
+}
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 1201px) {
+
+.main-content-area {
+  min-height: 450px;
+}
+
+.banner-text { position:relative; left:5%; top:40px; font-family: 'Nunito Sans Black', sans-serif; font-size:18px; max-width: 50%;}
+
+
+}
+
+
+
+/*Large Desktop Only*/
+@media (min-width: 1201px) {
+
+
+
+}
+
+
+/*Small desktop screen*/
+@media (min-width: 991px) and (max-width: 1370px) {
+.home-banner {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  float: none;
+}
+}
+
+
+/*Tablet and mobile*/
+@media (max-width: 991px) {
+
+
+
+
+
+div.csc-textpic .csc-textpic-imagewrap img{
+  width:70%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  height:auto;
+}
+
+
+div.csc-textpic-intext-right .csc-textpic-imagewrap {
+  float: none;
+}
+
+.csc-textpic-intext-left-nowrap .csc-textpic-text{
+  margin-left: 0px;
+}
+
+.subcolumns > div, .subcolumns > div {
+  width: 100%;
+  float: left;
+  display: block;
+  
+}
+
+div.csc-textpic-intext-right-nowrap .csc-textpic-text {
+  width:100%;
+  text-align:center;
+}
+
+div.csc-textpic-intext-right-nowrap img {
+  margin-left:auto !important;
+  margin-right:auto !important;
+  height:auto;
+  display:block;
+  float:none;
+  
+}
+
+/*prevent typo3 text from ever exceeding margins on mobile*/
+.csc-textpic-intext-right-nowrap .csc-textpic-text {
+  margin-left:10px !important;
+  margin-right:10px !important;
+}
+
+div.csc-textpic-intext-right-nowrap .csc-textpic-image, div.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap {
+  width:100%;
+  float:none;
+}
+
+div.csc-textpic-intext-left-nowrap .csc-textpic-text {
+  width:100%;
+  text-align:center;
+}
+
+.csc-textpic-imagewrap{
+  margin:0px !important;
+}
+
+div.csc-textpic-intext-left-nowrap img {
+  margin-left:auto !important;
+  margin-right:auto !important;
+  height:auto;
+  display:block;
+  float:none;
+  
+}
+
+div.csc-textpic-intext-left-nowrap .csc-textpic-image, div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap {
+  width:100%;
+  float:none;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.csc-textpic .csc-textpic-imagewrap img {
+  width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: auto;
+}
+
+.logo-container {
+  width: 260px;
+  height: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.home-banner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  float: none;
+}
+
+.main-content-area {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+
+
+#page-14 .ce-bodytext, #page-14 .ce-bodytext {
+  text-align:center;
+}
+
+
+}
+
+/*end default t3 cs*/
+
+
+
+
+/* FOOTER AREA CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+
+footer { 
+  font-size:0.8em;
+  background-color:#333333; 
+  min-height:200px; 
+  /*font-family: 'Open Sans', sans-serif; */
+  float:left;
+  width:100%;
+  
+}
+
+
+#page-footer {
+  float:left;
+  width:100%;
+}
+
+#page-footer .footer-wrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  float:left;
+  width:100%;
+  text-align:center;
+}
+
+.footer-wrapper {
+  text-align:center;
+}
+
+.footer-navigation { width:100%; display:block;     background-color: #333333; float:left;}
+
+
+#page-footer ul li, #page-footer p {    
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#page-footer p {color:white;}
+#page-footer ul li a {     color: #cd3333; }
+#page-footer ul li a:hover {     color: red;}
+
+
+.footer-wrapper .container-fluid {
+  min-height: 50px;
+}
+
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.list-1 li a, .list-2 li a {color:white;}
+.list-3 li a {color:#cd3333;}
+
+
+
+.icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+.icon-ul li { line-height:75px; width:100%; float:left;}
+.icon { float:left; margin-right:5px;}
+
+/*
+.copyright {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+min-height: 70px;
+background-color: #333333;
+float: left;
+width: 100%;
+padding-top: 35px;
+}
+*/
+.copyright p { text-align:center; color:#FFF; padding:10px 0; margin-bottom:0px;}
+.heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+.post p { font-size:12px; color:#FFF; line-height:20px;}
+.post p span { display:block; color:#8f8f8f;}
+.bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+.bottom_ul li { float:left; line-height:40px;}
+.bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+.bottom_ul li a { color:#FFF;  font-size:12px;}
+
+
+/* END FOOTER AREA CSS */
+
+
+.dashboard-wrapper {
+  display:table;
+}
+.content-left,.content-right { 
+  display: table-cell;
+  vertical-align:top;
+  float:none;
+  height:auto;
+}
+
+/*MOVE ALL RESPONSIVE DOWN HERE...*/
+
+
+/* Bootstrap 1 column trigger and responsive menu trigger*/
+@media (max-width: 767px) {
+
+#page-14 .content-left {
+  display:none;
+}
+
+
+.main-content-area {
+  background-image: url('images/dog-background.png');
+  width: 100%;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-position: bottom; 
+  background-size: 100% auto;
+}
+
+.banner-text { position:relative; left:0; top:40px; font-family: 'Nunito Sans Black', sans-serif; font-size:18px; max-width: 100%; text-align:center;}
+
+.logo-img-wrapper {
+  display:block;
+  text-align:center;
+  width:350px;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:auto;
+  float:none;
+}
+
+.logo-img-wrapper img {
+  margin-left:25px;
+}
+
+.logo-img-wrapper h1 {
+  width:150px;
+}
+
+.logo-container img {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom:25px;
+}
+
+.list-1 li a, .list-2 li a {
+  text-align:center !important;
+  /*width:100% !important;*/
+  display:block !important;
+}
+
+.footer-ul li {
+  line-height: 17px !important;
+  font-size: 12px !important;
+}
+
+.footer-ul {
+  text-align:center !important;
+  /*width:100% !important;*/
+  display:block !important;
+  line-height: 17px !important;
+  font-size: 12px !important;
+}
+
+
+} /* end 767 media query */
+
+/* Mobile Only*/
+@media (max-width: 540px) {
+
+
+}
+
+
+/*Tablet Only*/
+@media (min-width: 540px) and (max-width: 991px) {
+.home-banner {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  float: none;
+}
+
+
+}
+
+
+

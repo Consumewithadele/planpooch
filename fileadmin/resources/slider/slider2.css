@@ -1,0 +1,54 @@
+.cycle-overlay
+{
+  background: url(light.png) repeat;
+ float: none;
+  padding: 5px 0px 5px 0; text-align:center;
+  }
+
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 10%; opacity: 1; filter: alpha(opacity=1); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: -47px;  background: url(left.png) 50% 50% no-repeat;}
+.cycle-next { right: -47px; background: url(right.png) 50% 50% no-repeat;}
+
+
+.cycle-caption { top: 10px }
+.slider .cycle-caption { bottom: 10px; top: auto; font-size: 20px; font-weight: bold }
+h3 { margin-top: 30px }
+#captionArrow, #overlayArrow { position: absolute; color: red; white-space: nowrap; font-size: 20px }
+#captionArrow { top: 10px; left: 102%; }
+#overlayArrow { bottom: 15px; right: 102%; }
+
+.cycle-desc {
+ font-family:'Oswald', sans-serif;
+  position:absolute; text-align:center; margin:0 auto; bottom:40px; color:#ffffff; left:30px; font-size:18px; z-index:999 }
+
+
+
+
+@media          screen and      (min-width: 220px) and (max-width: 850px),
+        screen and      (min-device-width: 480px) and (max-device-width: 850px),
+                only screen and (max-device-width: 480px) and (orientation:portrait),
+   only screen and (-webkit-min-device-pixel-ratio : 1.5),   
+   only screen and (min-device-pixel-ratio : 1.5)
+{
+
+  .cycle-overlay {
+      width:100%;
+      height:auto;
+      float: left;
+      padding:0;
+   }
+
+.cycle-slide img { width:100% !important; height: auto !important }
+
+.my-cycle-slideshow {
+    width: 100%;
+}
+
+.cycle-prev { left: 0;  }
+.cycle-next { right: 0; }
+
+
+  
+}
+
+

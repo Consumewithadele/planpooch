@@ -1,0 +1,52 @@
+
+#plugin.tx_affiliatemanager_affiliatesfe {
+#	view {
+#		# cat=plugin.tx_affiliatemanager_affiliatesfe/file; type=string; label=Path to template root (FE)
+#		templateRootPath = EXT:affiliate_manager/Resources/Private/Templates/
+#		# cat=plugin.tx_affiliatemanager_affiliatesfe/file; type=string; label=Path to template partials (FE)
+#		partialRootPath = EXT:affiliate_manager/Resources/Private/Partials/
+#		# cat=plugin.tx_affiliatemanager_affiliatesfe/file; type=string; label=Path to template layouts (FE)
+#		layoutRootPath = EXT:affiliate_manager/Resources/Private/Layouts/
+#	}
+#	persistence {
+#		# cat=plugin.tx_affiliatemanager_affiliatesfe//a; type=string; label=Default storage PID
+#		storagePid = {$plugin.tx_affiliatemanager_affiliatesfe.storagePid}
+#		storagePid =
+#
+#	}
+#}
+
+
+plugin.tx_affiliatemanager_affiliatesfe {
+
+
+
+	view {
+		# cat=plugin.tx_affiliatemanager_affiliatesfe/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:affiliate_manager/Resources/Private/Templates/
+		# cat=plugin.tx_affiliatemanager_affiliatesfe/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:affiliate_manager/Resources/Private/Partials/
+		# cat=plugin.tx_affiliatemanager_affiliatesfe/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:affiliate_manager/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_affiliatemanager_affiliatesfe//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+}
+
+
+module.tx_affiliatemanager_affiliatesbe {
+	view {
+		# cat=module.tx_affiliatemanager_affiliatesbe/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:affiliate_manager/Resources/Private/Backend/Templates/
+		# cat=module.tx_affiliatemanager_affiliatesbe/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:affiliate_manager/Resources/Private/Backend/Partials/
+		# cat=module.tx_affiliatemanager_affiliatesbe/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:affiliate_manager/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_affiliatemanager_affiliatesbe//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

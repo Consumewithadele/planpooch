@@ -1,0 +1,61 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>Affiliate Manager</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+			<switchableControllerActions>
+				<TCEforms>
+					<label>Select View</label>
+					<onChange>reload</onChange>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="1" type="array">
+								<numIndex index="0">List Products</numIndex>
+								<numIndex index="1">Affiliates->list;Affiliates->show;</numIndex>
+							</numIndex>
+							<numIndex index="2" type="array">
+								<numIndex index="0">Insurance Search</numIndex>
+								<numIndex index="1">Search->insurance;Search->searchInsurance;</numIndex>
+							</numIndex>
+							<numIndex index="3" type="array">
+								<numIndex index="0">Dining Search</numIndex>
+								<numIndex index="1">Search->dining;Search->searchDining;</numIndex>
+							</numIndex>
+							<numIndex index="4" type="array">
+								<numIndex index="0">Vets Search</numIndex>
+								<numIndex index="1">Search->vets;Search->searchVets;</numIndex>
+							</numIndex>
+							<numIndex index="5" type="array">
+								<numIndex index="0">Groomers Search</numIndex>
+								<numIndex index="1">Search->groomers;Search->searchGroomers;</numIndex>
+							</numIndex>
+							<numIndex index="6" type="array">
+								<numIndex index="0">Holidays Search</numIndex>
+								<numIndex index="1">Search->holidays;Search->searchHolidays;</numIndex>
+							</numIndex>
+							<numIndex index="7" type="array">
+								<numIndex index="0">Search Results</numIndex>
+								<numIndex index="1">Search->showresults;</numIndex>
+							</numIndex>
+							<numIndex index="8" type="array">
+								<numIndex index="0">Show Favorites</numIndex>
+								<numIndex index="1">Widgets->favviewshow;</numIndex>
+							</numIndex>
+							<numIndex index="9" type="array">
+								<numIndex index="0">List Discount Items</numIndex>
+								<numIndex index="1">Affiliates->listdiscounts;</numIndex>
+							</numIndex>
+							
+							
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</switchableControllerActions>
+		</el>
+	</ROOT>
+</T3DataStructure>

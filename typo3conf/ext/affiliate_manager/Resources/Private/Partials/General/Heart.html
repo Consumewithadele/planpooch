@@ -1,0 +1,26 @@
+
+{namespace aff = Affiliates\AffiliateManager\ViewHelpers}
+
+
+
+
+<f:alias map="{favorite: '{aff:favorite(affiliateUid: \'{affiliate.uid}\' )}'}">
+
+
+<f:security.ifAuthenticated>	
+		<f:if condition="{favorite} == 1">
+			<f:then>		
+					<img src="fileadmin/plannedpooch/version2/images/heard-icon.png" class="ui heart image heart-action" data-affiliate-id="{affiliate.uid}" width="20">
+			</f:then>
+
+			<f:else>		
+					<img src="fileadmin/plannedpooch/version2/images/white-border-heart.png" class="ui heart image heart-action" data-affiliate-id="{affiliate.uid}" width="20">
+			</f:else>
+		</f:if>
+</f:security.ifAuthenticated>
+
+
+
+
+
+</f:alias>

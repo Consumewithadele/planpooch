@@ -1,0 +1,76 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Default" />
+<f:section name="main">
+<f:flashMessages />
+
+
+
+<div class="products">
+	<div class="ui equal width stackable grid">
+
+
+<f:widget.paginate objects="{affiliates}" as="paginatedAffiliates" configuration="{itemsPerPage: 8, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+	<f:for each="{paginatedAffiliates}" as="affiliate" iteration="iterator">
+
+
+		<div class="middle aligned column">
+				<div class="ui card">
+					<div class="content">
+						<f:render partial="General/Heart" arguments="{_all}"/>				
+
+					</div>
+					<div class="image breed-header">
+						<f:render partial="General/Image" arguments="{_all}" />
+					</div>
+				
+				
+					<div class="content">
+						<div class="description">
+							<p style="font-size:inherit; text-align:center;"><f:format.crop maxCharacters="30" respectHtml="FALSE">{affiliate.name}:</f:format.crop></p><f:format.crop maxCharacters="60" >{affiliate.description}</f:format.crop>
+						</div>
+				</div>
+				
+				<div class="extra content">
+				
+					<a>
+						<f:render partial="General/Cost" arguments="{_all}" />
+					</a>
+					
+					<span class="right floated">
+                  <a href="{affiliate.url}"><img src="fileadmin/plannedpooch/version2/images/bag.png" class="ui image" width="20"></a>
+               </span>
+				</div>
+			</div>
+</div>
+
+
+<f:if condition="{iterator.cycle} % 4">
+            <f:then>
+            </f:then>
+            <f:else>
+                <f:if condition="{iterator.isLast}">
+                    <f:then>
+                    </f:then>
+                    <f:else>
+                      <!--  // close row -->
+                        </div>
+                        <!-- // open new row -->
+                        <div class="ui equal width stackable grid">
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
+
+
+</f:for>
+
+</f:widget.paginate>
+
+		
+</div> <!-- end the row -->
+	</div>
+
+
+
+</f:section>

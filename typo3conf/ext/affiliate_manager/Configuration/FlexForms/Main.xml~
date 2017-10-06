@@ -1,0 +1,12 @@
+<T3DataStructure>
+	<meta>
+		<langChildren>1</langChildren>
+		<langDatabaseOverlay>1</langDatabaseOverlay>
+	</meta>
+	<sheets>
+
+		<sDEF>EXT:lms3offlineattendance/Configuration/FlexForms/Actions.xml</sDEF>
+		<fields>EXT:lms3offlineattendance/Configuration/FlexForms/Fields.xml</fields>
+
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-02-13T00:23:32Z" product-name="affiliate_manager">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="sourceid.description">
+				<source>sourceid</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="imageurl.description">
+				<source>imageurl</source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source>url</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+			<trans-unit id="active.description">
+				<source>active</source>
+			</trans-unit>
+			<trans-unit id="petnumber.description">
+				<source>petnumber</source>
+			</trans-unit>
+			<trans-unit id="cost.description">
+				<source>cost</source>
+			</trans-unit>
+			<trans-unit id="address.description">
+				<source>address</source>
+			</trans-unit>
+			<trans-unit id="businesshours.description">
+				<source>businesshours</source>
+			</trans-unit>
+			<trans-unit id="phonenumber.description">
+				<source>phonenumber</source>
+			</trans-unit>
+			<trans-unit id="rating.description">
+				<source>rating</source>
+			</trans-unit>
+			<trans-unit id="affiliatechannel.description">
+				<source>affiliatechannel</source>
+			</trans-unit>
+			<trans-unit id="affiliatechannel.sync">
+				<source>sync</source>
+			</trans-unit>
+			<trans-unit id="affiliatechannel.prevcost">
+				<source>prevcost</source>
+			</trans-unit>
+			<trans-unit id="affiliatechannel.retailer">
+				<source>retailer</source>
+			</trans-unit>
+			<trans-unit id="affiliatechannel.inscost">
+				<source>inscost</source>
+			</trans-unit>
+			
+			
+			
+		</body>
+	</file>
+</xliff>

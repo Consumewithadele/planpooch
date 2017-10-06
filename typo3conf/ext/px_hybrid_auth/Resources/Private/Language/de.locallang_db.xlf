@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-07-09T13:36:00Z" product-name="px_register">
+        <header/>
+        <body>
+
+            <!-- #####      -->
+            <!-- tt_content -->
+            <!-- #####      -->
+
+            <trans-unit id="CType.I.px_hybrid_auth_login" xml:space="preserve">
+                <source>HybridAuth Login Form</source>
+                <target state="translated">HybridAuth Login Formular</target>
+            </trans-unit>
+
+            <trans-unit id="CType.I.px_hybrid_auth_login.description" xml:space="preserve">
+                <source>Social Login form used to authenticate against social provide (e.g. facebook)</source>
+                <target state="translated">Social Login Formular, um sich über einen Social Provider zu authentifizieren.</target>
+            </trans-unit>
+
+             <trans-unit id="tt_content.pi_flexform.sheet_general" xml:space="preserve">
+                <source>General</source>
+                 <target state="translated">Allgemein</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.sheet_redirect" xml:space="preserve">
+                <source>Redirects</source>
+                <target state="translated">Weiterleitungen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.redirectPageLogin" xml:space="preserve">
+                <source>After Successful Login Redirect to Page</source>
+                <target state="translated">Nach erfolgreicher Anmeldung auf folgende Seite weiterleiten</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.redirectPageLoginError" xml:space="preserve">
+                <source>After Failed Login Redirect to Page</source>
+                <target state="translated">Nach einem Fehler bei der Anmeldung auf folgende Seite weiterleiten</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.user_storage" xml:space="preserve">
+                <source>User Storage Page</source>
+                <target state="translated">Speicherort Benutzer</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.show_logoutFormAfterLogin" xml:space="preserve">
+                <source>Display Logout Form After Successful Login</source>
+                <target state="translated">Weiterleitung nach erfolgreicher Anmeldung deaktivieren, aber Abmeldeformular anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.recursive" xml:space="preserve">
+                <source>Recursive</source>
+                <target state="translated">Rekursiv</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.pi_flexform.recursive.I.0">
+                <source>0 Evenen (only selected page)</source>
+                <target state="translated">0 Ebenen (nur die ausgewählte Seite)</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.recursive.I.1">
+                <source>1 level</source>
+                <target state="translated">1 Ebene</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.recursive.I.2">
+                <source>2 levels</source>
+                <target state="translated">2 Ebenen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.recursive.I.3">
+                <source>3 levels</source>
+                <target state="translated">3 Ebenen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.recursive.I.4">
+                <source>4 levels</source>
+                <target state="translated">4 Ebenen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.pi_flexform.recursive.I.5">
+                <source>Infinite</source>
+                <target state="translated">Unendlich</target>
+            </trans-unit>
+
+            <!-- ##### -->
+            <!-- user  -->
+            <!-- ##### -->
+
+            <!-- fe_users -->
+            <trans-unit id="fe_users.tabs.px_hybrid_auth" xml:space="preserve">
+                <source>PxHybridAuth</source>
+                <target state="translated">PxHybridAuth</target>
+            </trans-unit>
+            <trans-unit id="fe_users.message.no_configured_providers.header" xml:space="preserve">
+                <source>No social provider configuration given!</source>
+                <target state="translated">Keine SocialProvider aktiviert oder konfiguriert!</target>
+            </trans-unit>
+            <trans-unit id="fe_users.message.no_configured_providers.body" xml:space="preserve">
+                <source>Please enable and configure your social providers within the extension configuration in the extension manager!</source>
+                <target state="translated">Bitte aktivieren und konfigurieren Sie ihre gewünschten Social Provider in der Extension Konfiguration im Extension Manager.</target>
+            </trans-unit>
+
+            <!-- identities -->
+            <trans-unit id="tx_pxhybridauth_domain_model_user.identities" xml:space="preserve">
+                <source>Identities</source>
+                <target state="translated">Identitäten</target>
+            </trans-unit>
+
+            <!-- ##### -->
+            <!-- identity -->
+            <!-- ##### -->
+            <trans-unit id="tx_pxhybridauth_domain_model_identity" xml:space="preserve">
+                <source>Identity</source>
+                <target state="translated">Identität</target>
+            </trans-unit>
+            <trans-unit id="tx_pxhybridauth_domain_model_identity.identifier" xml:space="preserve">
+                <source>Identifier</source>
+                <target state="translated">Identität</target>
+            </trans-unit>
+            <trans-unit id="tx_pxhybridauth_domain_model_identity.tx_extbase_type" xml:space="preserve">
+                <source>Type</source>
+                <target state="translated">Typ</target>
+            </trans-unit>
+            <trans-unit id="tx_pxhybridauth_domain_model_identity.tx_extbase_type.Tx_PxHybridAuth_Domain_Model_Identity_FacebookIdentity" xml:space="preserve">
+                <source>Facebook</source>
+                <target state="translated">Facebook</target>
+            </trans-unit>
+            <trans-unit id="tx_pxhybridauth_domain_model_identity.tx_extbase_type.Tx_PxHybridAuth_Domain_Model_Identity_XingIdentity" xml:space="preserve">
+                <source>Xing</source>
+                <target state="translated">Xing</target>
+            </trans-unit>
+            <trans-unit id="tx_pxhybridauth_domain_model_identity.tx_extbase_type.Tx_PxHybridAuth_Domain_Model_Identity_LinkedinIdentity" xml:space="preserve">
+                <source>LinkedIn</source>
+                <target state="translated">LinkedIn</target>
+            </trans-unit>
+
+            <trans-unit id="plugins.identity.name" xml:space="preserve">
+                <source>PxHybridAuth::SocialAccounts</source>
+                <target state="translated">PxHybridAuth::SocialAccounts</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

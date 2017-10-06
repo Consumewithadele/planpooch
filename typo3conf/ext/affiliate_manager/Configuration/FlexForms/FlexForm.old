@@ -1,0 +1,50 @@
+<T3DataStructure>
+<meta>
+<langDisable>1</langDisable>
+</meta>
+
+
+<sheets>
+
+
+<sDEF>
+	<ROOT>    
+		<el>
+<settings.category>
+			<TCEforms>
+				<label>Select the Categories you wish to display</label>
+				<!--<config>
+					<type>select</type>
+					<items type="array">
+
+						<numindex index="0" type="array">
+						<numindex index="0">Products</numindex>
+						<numindex index="1">Products</numindex>
+						</numindex>
+
+						<numindex index="1" type="array">
+						<numindex index="0">Vets</numindex>
+						<numindex index="1">Vets</numindex>
+						</numindex>
+
+						<numindex index="3" type="array">
+						<numindex index="0">Groomers</numindex>
+						<numindex index="1">Groomers</numindex>
+						</numindex>
+
+					</items>
+					<maxitems>10</maxitems>
+					<size>10</size>
+				</config> -->
+
+			</TCEforms>
+</settings.category>		
+				
+        </el>
+    </ROOT>
+
+</sDEF>
+</sheets>
+</T3DataStructure>
+
+

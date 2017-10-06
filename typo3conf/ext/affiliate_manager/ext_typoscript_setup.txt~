@@ -1,0 +1,16 @@
+
+plugin.tx_affiliate_manager_affiliatesfe.mvc.callDefaultActionIfActionCantBeResolved = 1
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:affiliate_manager/Configuration/TypoScript/setup.txt">
+
+
+
+            In2code\Femanager\Domain\Model\User {
+                mapping {
+                        tableName = fe_users
+                        recordType =
+                        columns {
+
+                        }
+                }
+            }

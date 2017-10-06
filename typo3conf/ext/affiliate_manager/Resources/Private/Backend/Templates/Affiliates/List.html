@@ -1,0 +1,63 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1></h1>
+
+<f:flashMessages />
+
+
+<div class="tx_main_manner"><h1>Here is your Affiliate SYNC Dashboard.</h1></div>
+
+<div class="tx_instructions_area">
+
+<div class="tx_main_manner"><h2>Manage Extension Settings</h2></div>
+<p>This section is for managing the settings for affiliates Manager.</p>
+<div>
+
+<div class="tx_affiliate_sync">
+<f:link.action action="showcategories" class="tx_affiliate_sync_button">Manage Categories</f:link.action>
+<f:link.action action="managepostalcode" class="tx_affiliate_sync_button">Manage Postal Code Regions</f:link.action>
+</div>
+
+
+<div class="tx_instructions_area">
+<p>If you would like to sync with one of the following affiliates simply click 
+the sync button and automatically the sync will begin. You will be brought back to this page once it has completed. </p>
+<div>
+
+
+<div class="tx_affiliate_sync">
+<f:link.action action="affiliatewindow" class="tx_affiliate_sync_button">Sync Affiliate: Affiliate Window</f:link.action>
+<f:link.action action="webgains" class="tx_affiliate_sync_button">Sync Affiliate: WebGains</f:link.action>
+<f:link.action action="comissionjunction" class="tx_affiliate_sync_button">Sync Affiliate: Commission Junction</f:link.action>
+<f:link.action action="rakuten" class="tx_affiliate_sync_button">Sync Affiliate: Rakuten</f:link.action>
+</div>
+
+<div class="tx_notes_area">
+<p>* Affiliate Window Syncs to both Food and Products Categories</p>
+<p>* Comission Junction Syncs Products Category</p>
+<p>* Webgains Syncs to Food Categry</p>
+<p>* Rakuten Syncs to Products Section</p>
+<p> </p>
+</div>
+
+
+
+
+
+
+<!--<f:link.action action="new">New Affiliate</f:link.action>-->
+
+</f:section>

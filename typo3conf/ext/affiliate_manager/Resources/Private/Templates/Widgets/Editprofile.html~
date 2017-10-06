@@ -1,0 +1,76 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace femanager=In2code\Femanager\ViewHelpers}
+
+
+
+
+
+<f:layout name="Default" />
+<f:section name="main">
+<style>
+.af-avatar {
+    background-color: #fff;
+    border: 2px solid #fff;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 60px;
+    margin-top: -30px;
+    position: relative;
+    width: 60px;
+    -moz-box-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+</style>
+
+
+<f:flashMessages />
+
+
+
+<f:if condition="{data.logged_in} == 1">
+
+<f:then>
+	<f:if condition="{data.user.image}">
+		<f:then>
+			<a href="http://ded01.stormat.ca/~justin/typo/index.php?id=48">
+				<i class="settings icon" style="color:white;"></i>Settings
+				<f:image	src="uploads/pics/{data.user.image}" alt="{user.firstName} {user.lastName}" width="150" class="ui image af-avatar" />
+			</a>
+		</f:then>
+		<f:else>
+			<a href="http://ded01.stormat.ca/~justin/typo/index.php?id=48">
+				<i class="settings icon" style="color:white;"></i>Settings
+				<f:image	src="typo3conf/affiliate_manager/Resources/Public/Images/default-pic.gif" alt="default" width="150" class="ui image af-avatar" />
+			</a>
+		</f:else>
+	</f:if>
+</f:then>
+<f:else>
+<!--
+<a href="http://ded01.stormat.ca/~justin/typo/index.php?id=32" class="item mobile-hidden">
+          <img src="fileadmin/plannedpooch/version2/images/lock-icon.png" class="ui image" width="14">
+          Log In
+        </a>
+    -->    
+<a href="http://ded01.stormat.ca/~justin/typo/index.php?id=32" class="pooch-button menu-button">
+          Log In
+        </a>
+</f:else>
+
+</f:if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</f:section>

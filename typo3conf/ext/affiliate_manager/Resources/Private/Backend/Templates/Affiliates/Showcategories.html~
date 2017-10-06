@@ -1,0 +1,44 @@
+
+<f:layout name="Default" />
+
+
+
+<f:section name="content">
+<h1></h1>
+
+<f:flashMessages />
+
+
+<div class="tx_main_manner"><h1>Categories</h1></div>
+<div class="tx_instructions_area">
+<p>Manage Categories Below</p>
+</div>
+
+
+ <f:for each="{categories}" as="category">
+
+<f:form action="updatecategories"  name="updateCategories" object="{category}" style="border: 1px solid black;">
+<BR>
+<label>Category Title: </label>
+<f:form.textfield property="title" />
+
+
+<label>Category Storage ID: </label>
+<f:form.textfield property="categorystoragepid" />
+
+<BR><BR>
+<f:form.submit value="Update" class="tx_affiliate_sync_button" />
+<f:link.action action="deletecategories" class="tx_affiliate_sync_button" arguments="{category}">Delete</f:link.action>
+</f:form>
+
+</f:for>
+
+
+<BR><BR>
+
+<f:link.action action="addnewcategories" class="tx_affiliate_sync_button">Create New</f:link.action>
+
+
+
+
+</f:section>

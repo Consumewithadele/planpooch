@@ -1,0 +1,206 @@
+plugin.tx_affiliatemanager.mvc.callDefaultActionIfActionCantBeResolved = 1
+
+
+plugin.tx_affiliatemanager_affiliatesfe {
+
+mvc.callDefaultActionIfActionCantBeResolved = 1
+
+	view {
+		templateRootPaths.0 = {$plugin.tx_affiliatemanager_affiliatesfe.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_affiliatemanager_affiliatesfe.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_affiliatemanager_affiliatesfe.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_affiliatemanager_affiliatesfe.persistence.storagePid}
+		
+		###### This forces us to use the typo3 form PID instead of the default.
+		storagePid >
+	}
+	
+    settings {
+        typeNum = {$plugin.tx_affiliatemanager_affiliatesfe.settings.typeNum}
+    }
+	
+	
+	
+	## Quicksearch Widget
+    widgets {
+        search = USER
+        search {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            pluginName = Pi1
+            extensionName = AffiliateManager
+            controller = Search
+            action = quicksearch
+            vendorName = Affiliates
+        }
+    }
+    
+    
+	## Login Widget
+    widgets {
+        afeditprofile = USER
+        afeditprofile {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            pluginName = Pi2
+            extensionName = AffiliateManager
+            controller = Widgets
+            action = login
+            vendorName = Affiliates
+        }
+    }
+    
+    
+	## Login Widget
+    widgets {
+
+        affavorites = USER
+        affavorites {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            pluginName = Pi3
+            extensionName = AffiliateManager
+            controller = Widgets
+            action = userfav
+            vendorName = Affiliates
+        }
+        
+
+        
+    }
+    
+    
+
+	
+	
+	
+}
+
+#########plugin.tx_affiliatemanager_pi.persistence.storagePid >
+
+page.includeCSS.tx_affiliatemanager_affiliatesfeCss = EXT:affiliate_manager/Resources/Public/css/default-styles.css
+
+
+
+
+
+plugin.tx_affiliatemanager._CSS_DEFAULT_STYLE (
+
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-affiliate-manager table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-affiliate-manager table th {
+		font-weight:bold;
+	}
+
+	.tx-affiliate-manager table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+ # Module configuration
+module.tx_affiliatemanager_web_affiliatemanageraffiliatesbe {
+	persistence {
+		storagePid = {$module.tx_affiliatemanager_affiliatesbe.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_affiliatemanager_affiliatesbe.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_affiliatemanager_affiliatesbe.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_affiliatemanager_affiliatesbe.view.layoutRootPath}
+	}
+}
+
+
+
+### AJAX REQUESTS ###
+
+#ajaxselectlist_page = PAGE
+#ajaxselectlist_page {
+#    typeNum = 89657201
+# 
+#    config {
+#        disableAllHeaderCode = 1
+#        additionalHeaders = Content-type:application/html
+#        xhtml_cleaning = 0
+#        debug = 0
+#       no_cache = 1
+#       admPanel = 0
+#   }
+#
+#   ##10 < tt_content.list.20.tx_affiliatemanager_affiliatesfe.widgets.affavorites
+#   
+#   10 = COA
+#   10 < tt_content.list.20.tx_affiliatemanager_pi3
+#  
+#    
+#
+#}
+
+### Configure the request that equals typeNum to generate proper ajax output
+myAjaxPage = PAGE
+myAjaxPage {
+
+    typeNum = 89657201
+ 
+  10 = USER
+  10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    pluginName = Pi3
+    extensionName = AffiliateManager
+    vendorName = Affiliates
+  }
+
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders = Content-type:application/json
+    xhtml_cleaning = 0
+    admPanel = 0
+    debug = 0
+    no_cache = 1
+  }
+}
+
+
+#mySpecialKeyword = PAGE
+#mySpecialKeyword {
+#    typeNum = 89657201
+#    config {
+#        disableAllHeaderCode = 1
+#        additionalHeaders = Content-type:application/html
+#        xhtml_cleaning = 0
+#        debug = 0
+#        no_cache = 1
+#        admPanel = 0
+#    }
+#    headerData >
+#    10 = USER_INT
+#    10 {
+#        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+#        extensionName = AffiliateManager
+#
+#        pluginName = Pi3
+#    }
+#}
+
+
+

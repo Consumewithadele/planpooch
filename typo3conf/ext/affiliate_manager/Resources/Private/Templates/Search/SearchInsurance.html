@@ -1,0 +1,141 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+
+
+
+
+<div class="ui container">
+        <div class="products">
+          <div class="product-header">Insurances</div>
+          
+          <div class="insurance-box" style="margin-bottom:0px;">
+            <div class="ui container">
+              <div class="ui centered stackable grid">
+                <div class=" six wide middle aligned column">
+                  <div class="ui image">
+                    <img src="fileadmin/plannedpooch/version2/images/red-check.png" width="40" class="ui image" />
+                  </div>
+                  <p class="choice">Your pets details</p>
+                </div> <!-- column -->
+                <div class="thwo wide middle aligned column">
+                  <img src="fileadmin/plannedpooch/version2/images/angle-right.png" width="27" class="ui offer-angle centered image" />
+                </div>
+                <div class="six wide middle aligned column">
+                  <div class="ui image">
+                    <img src="fileadmin/plannedpooch/version2/images/two.png" width="40" class="ui image" />
+                  </div>
+                  <p class="choice">Insurance options</p>
+                </div> <!-- column -->
+              </div> <!-- grid -->
+              <img src="fileadmin/plannedpooch/version2/images/white-dog-logo.png" width="60" class="ui centered white-dog-logo image" />
+              
+              <h3>Insurance options</h3>
+              
+                <p class="insurance-header">These are your best prices that meet the requirements for you fur baby</p>
+              </div>
+            
+            <!--<div class="reset-filter">
+              <div class="ui stackable grid">
+                <div class="fourteen wide left aligned column">
+                  <span>Sort by:</span>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="color-label">Annual Price</label>
+                  </div>
+                  <div class="ui second-checkbox checkbox">
+                    <input type="checkbox" name="example">
+                    <label>Monthly Price</label>
+                  </div></div>
+                <div class="two wide column">
+                  <a href="#" class="reset-button">Reset filters</a>
+                </div>
+              </div>
+            </div>-->
+            </div> <!-- insurance box -->
+          
+            <div class="insurrance-table">
+            <div class="ui color-grid container">
+                  <table class="ui celled table">
+                  <thead>
+                    <tr>
+                      <th>Provider</th>
+                      <th class="red-column">Premium</th>
+                      <th>Type of Cover</th>
+                      <th>Vet Fees</th>
+                      <th>Death by</th>
+                      <th>Lost or stolen</th>
+                      <th>Vet Fee Excess</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  <f:for each="{data.results}" as="result" iteration="iterator">
+                    <tr>
+                      <td><img src="{result.imageurl}" width="80" class="ui centered image" /> </td>
+                      <td class="red-column"><p>Monthly Price {result.inscycle} x <span>{result.currency}{result.inscost}</span> Total {result.currency}<v:variable.get name="data.totals.{iterator.index}" useRawKeys="1"/></p></td>
+                      <td><f:format.html>{result.insurancecoverage}</f:format.html></td>
+                      <td><f:format.html>{result.insurancefees}</f:format.html></td>
+                      <td><f:format.html>{result.insurancedeath}</f:format.html></td>
+                      <td><f:format.html>{result.insurancelost}</f:format.html></td>
+                      <td>{result.currency}{result.insurancefeesexcess}</td>
+                      <td><a href="{result.url}" class="ui planpooch-button button">Details</a></td>
+                    </tr>
+                    
+                  </f:for>
+                    <!--<tr>
+                      <td><img src="fileadmin/plannedpooch/version2/images/e-i.png" width="80" class="ui centered image" /> </td>
+                      <td class="red-column"><p>Monthly Price 12 x <span>£3.27</span> Total £39.24</p></td>
+                      <td><p>Accident Only</p></td>
+                      <td><p>£3,000 per qualifying accident up to a maximum of £12,500</p></td>
+                      <td><p>Accident: — Illness: —</p></td>
+                      <td>—</td>
+                      <td><p>£95</p></td>
+                      <td><a href="#" class="ui planpooch-button button">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td><img src="fileadmin/plannedpooch/version2/images/e-i.png" width="80" class="ui centered image" /> </td>
+                      <td class="red-column"><p>Monthly Price 12 x <span>£3.27</span> Total £39.24</p></td>
+                      <td><p>Accident Only</p></td>
+                      <td><p>£3,000 per qualifying accident up to a maximum of £12,500</p></td>
+                      <td><p>Accident: — Illness: —</p></td>
+                      <td>—</td>
+                      <td><p>£95</p></td>
+                      <td><a href="#" class="ui planpooch-button button">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td><img src="fileadmin/plannedpooch/version2/images/e-i.png" width="80" class="ui centered image" /> </td>
+                      <td class="red-column"><p>Monthly Price 12 x <span>£3.27</span> Total £39.24</p></td>
+                      <td><p>Accident Only</p></td>
+                      <td><p>£3,000 per qualifying accident up to a maximum of £12,500</p></td>
+                      <td><p>Accident: — Illness: —</p></td>
+                      <td>—</td>
+                      <td><p>£95</p></td>
+                      <td><a href="#" class="ui planpooch-button button">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td><img src="fileadmin/plannedpooch/version2/images/e-i.png" width="80" class="ui centered image" /> </td>
+                      <td class="red-column"><p>Monthly Price 12 x <span>£3.27</span> Total £39.24</p></td>
+                      <td><p>Accident Only</p></td>
+                      <td><p>£3,000 per qualifying accident up to a maximum of £12,500</p></td>
+                      <td><p>Accident: — Illness: —</p></td>
+                      <td>—</td>
+                      <td><p>£95</p></td>
+                      <td><a href="#" class="ui planpooch-button button">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td><img src="fileadmin/plannedpooch/version2/images/e-i.png" width="80" class="ui centered image" /> </td>
+                      <td class="red-column"><p>Monthly Price 12 x <span>£3.27</span> Total £39.24</p></td>
+                      <td><p>Accident Only</p></td>
+                      <td><p>£3,000 per qualifying accident up to a maximum of £12,500</p></td>
+                      <td><p>Accident: — Illness: —</p></td>
+                      <td>—</td>
+                      <td><p>£95</p></td>
+                      <td><a href="#" class="ui planpooch-button button">Details</a></td>
+                    </tr>-->
+                  </tbody>
+                </table>
+              </div>
+            </div> <!--  insurrance-table  -->
+            
+            </div></div>

@@ -1,0 +1,45 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Listing for Affiliates</h1>
+
+<f:flashMessages />
+
+<table  class="tx_affiliatemanager" >
+	<tr>
+		<th><f:translate key="tx_affiliatemanager_domain_model_affiliates.sourceid" /></th>
+		<th><f:translate key="tx_affiliatemanager_domain_model_affiliates.description" /></th>
+		<th><f:translate key="tx_affiliatemanager_domain_model_affiliates.logo" /></th>
+		<th><f:translate key="tx_affiliatemanager_domain_model_affiliates.url" /></th>
+		<th><f:translate key="tx_affiliatemanager_domain_model_affiliates.active" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{affiliatess}" as="affiliates">
+		<tr>
+			<td><f:link.action action="show" arguments="{affiliates : affiliates}"> {affiliates.sourceid}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{affiliates : affiliates}"> {affiliates.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{affiliates : affiliates}"> {affiliates.logo}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{affiliates : affiliates}"> {affiliates.url}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{affiliates : affiliates}"> {affiliates.active}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{affiliates : affiliates}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{affiliates : affiliates}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Affiliates</f:link.action>
+</f:section>

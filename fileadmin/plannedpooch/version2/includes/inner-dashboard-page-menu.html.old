@@ -1,0 +1,64 @@
+<div class="five wide middle aligned column">
+  <div class="ui plan-my segment">
+    <div class="plan-my-header ui dropdown" tabindex="0">
+      Plan my
+      
+      <div class="menu transition hidden" tabindex="-1">
+        <div class="ui middle aligned selection list">
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-insurances.png" class="ui centered image" width="50">
+            <div class="content">
+              Insurance
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-dining.png" class="ui centered image" width="50">
+            <div class="content">
+              Dining
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-discounts.png" class="ui centered image" width="50">
+            <div class="content">
+              Discounts
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-holidays.png" class="ui centered image" width="50">
+            <div class="content">
+              Holidays
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-vets.png" class="ui centered image" width="50">
+            <div class="content">
+              Vets
+            </div>
+          </div> 
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-groomers.png" class="ui centered image" width="50">
+            <div class="content">
+              Groomers
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-recipes.png" class="ui centered image" width="50">
+            <div class="content">
+              Recipes
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-holidays.png" class="ui centered image" width="50">
+            <div class="content">
+              Holidays
+            </div>
+          </div>
+          <div class="item">
+            <img src="fileadmin/plannedpooch/version2/images/icon-pedia.png" class="ui centered image" width="50">
+            <div class="content">
+              Pooch-O-Pedia
+            </div>
+          </div>
+          
+        </div>
+      </div> <!-- .menu -->
